@@ -1,5 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
+import bg from '../assets/MyBizzAI-removebg-preview.png'
 function Footer() {
   return (
 <footer className="bg-purple-50 z-20 relative  :bg-gray-900">
@@ -7,14 +9,14 @@ function Footer() {
         <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-2/5">
                 <div className="px-6">
-                    <Link href="/" className='text-3xl'>
-                        {/* <img className="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt=""/> */}
-                        BizzAI
-                    </Link>
+                <Link href="/" className="flex items-center space-x-3">
+          <Image src={bg} height={400} width={200} className="h-auto border-2 left-0 mt-12 absolute  z-10" alt="BizzAI Logo" />
+          {/* <span className="self-center text-2xl font-semibold">MyBizzAI</span> */}
+        </Link>
 
-                    <p className="max-w-sm mt-2 text-gray-500 :text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
+                    {/* <p className="max-w-sm mt-2 text-gray-500  mt-10:text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p> */}
 
-                    <div className="flex mt-6 -mx-2">
+                    <div className="flex mt-12 -mx-2">
                         <Link href="#"
                             className="mx-2 text-gray-600 transition-colors duration-300 :text-gray-300 hover:text-blue-500 :hover:text-blue-400"
                             aria-label="Reddit">
@@ -73,8 +75,8 @@ function Footer() {
 
                     <div>
                         <h3 className="text-gray-700 uppercase :text-white">Contact</h3>
-                        <span className="block mt-2 text-sm text-gray-600 :text-gray-400 hover:underline">+1 526 654 8965</span>
-                        <span className="block mt-2 text-sm text-gray-600 :text-gray-400 hover:underline">example@email.com</span>
+                        <span className="block mt-2 text-sm text-gray-600 :text-gray-400 hover:underline">+91 9165130008</span>
+                        <span className="block mt-2 text-sm text-gray-600 :text-gray-400 hover:underline">contact@mybizai.in</span>
                     </div>
                 </div>
             </div>

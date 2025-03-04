@@ -1,5 +1,6 @@
 import React from 'react'
 // import ShinyText from '../blocks/TextAnimations/ShinyText'
+
 function Hero() {
   return (
     <>
@@ -12,6 +13,7 @@ function Hero() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
             </svg>
         </a>
+
         {/* <ShinyText text="Just some shiny text!" disabled={false} speed={3} className='custom-class' /> */}
 
         <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl className:text-white">AI-Powered Marketing & Business Growth Made Simple!</h1>

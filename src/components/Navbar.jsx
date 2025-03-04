@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import bg from '../assets/MyBizzAI-removebg-preview.png'
 export default function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +11,8 @@ export default function Navbar() {
     <nav className="fixed w-full z-30 top-0 start-0 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="BizzAI Logo" />
-          <span className="self-center text-2xl font-semibold">BizzAI</span>
+          <Image src={bg} height={400} width={200} className="h-auto border-2 absolute left-0 md:-top-16 lg:left-30 md:left-2 z-10" alt="BizzAI Logo" />
+          {/* <span className="self-center text-2xl font-semibold">MyBizzAI</span> */}
         </Link>
         
         <div className="flex md:order-2 space-x-3">
@@ -29,7 +29,7 @@ export default function Navbar() {
         </div>
         
         <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${menuOpen ? 'block bg-white shadow-md ' : 'hidden'}`}>
-          <ul className="flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg md:border-0">
+          <ul className="flex flex-col md:flex-row md:space-x-2 md:pl-20 p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg md:border-0">
             <li>
               <Link href="/" className="block py-2 px-3 text-gray-900 hover:text-blue-600">Home</Link>
             </li>
